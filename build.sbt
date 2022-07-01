@@ -15,3 +15,12 @@ lazy val root = project
     libraryDependencies += "com.softwaremill.sttp.client3" %% "core" % "3.6.2"
 
   )
+
+lazy val buildAndOpenDoc = taskKey[Unit]("build and open document")
+
+buildAndOpenDoc := {
+  println("now we begin to build and open doc")
+  " pwd && sbt doc && open ./target/scala-3.1.3/api/index.html" 
+  println("end")
+
+}
