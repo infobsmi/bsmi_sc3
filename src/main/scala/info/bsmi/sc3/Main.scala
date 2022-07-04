@@ -1,12 +1,13 @@
 package info.bsmi.sc3
 import sttp.client3._
 
-object Main:
+object Main extends  Htr:
 
   def msg = "我是用Scala 3编译的. :)"
 
   @main
   def hello: Unit = 
+    println(htrName)
     println("我们都能听见Hello world!")
     println(msg)
     val sort: Option[String] = None
