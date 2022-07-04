@@ -10,6 +10,9 @@ lazy val root = project
     scalaVersion := scala3Version,
     libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test,
     libraryDependencies += "com.softwaremill.sttp.client3" %% "core" % "3.6.2",
+    libraryDependencies += "com.softwaremill.macwire" %% "macros" % "2.5.7" % "provided",
+    libraryDependencies += "com.softwaremill.macwire" %% "util" % "2.5.7",
+    libraryDependencies += "com.softwaremill.macwire" %% "proxy" % "2.5.7",
     nativeImageVersion := "22.1.0"
   )
   .enablePlugins(NativeImagePlugin)

@@ -6,7 +6,8 @@ object Main extends  Htr:
   def msg = "我是用Scala 3编译的. :)"
 
   @main
-  def hello: Unit = 
+  def hello: Unit =
+    emailService.sendEmail("what is your name")
     println(htrName)
     println("我们都能听见Hello world!")
     println(msg)
