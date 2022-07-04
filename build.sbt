@@ -8,6 +8,7 @@ lazy val root = project
     name := "bsmi_sc3",
     version := "0.1.0-SNAPSHOT",
     scalaVersion := scala3Version,
+
     libraryDependencies += "org.scalameta" %% "munit" % "0.7.29" % Test,
     libraryDependencies += "com.softwaremill.sttp.client3" %% "core" % "3.6.2",
     libraryDependencies += "com.softwaremill.macwire" %% "macros" % "2.5.7" % "provided",
@@ -15,7 +16,6 @@ lazy val root = project
     libraryDependencies += "com.softwaremill.macwire" %% "proxy" % "2.5.7",
     nativeImageVersion := "22.1.0"
   )
-  .enablePlugins(NativeImagePlugin)
 
 lazy val bdoc = taskKey[Unit]("build and open document")
 
