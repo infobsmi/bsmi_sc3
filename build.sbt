@@ -14,7 +14,6 @@ lazy val root = project
     libraryDependencies += "com.softwaremill.macwire" %% "macros" % "2.5.7" % "provided",
     libraryDependencies += "com.softwaremill.macwire" %% "util" % "2.5.7",
     libraryDependencies += "com.softwaremill.macwire" %% "proxy" % "2.5.7",
-    nativeImageVersion := "22.1.0"
   )
 
 lazy val bdoc = taskKey[Unit]("build and open document")
