@@ -1,12 +1,11 @@
 package info.bsmi.sc3
 import sttp.client3._
 
-object Main extends  Htr:
+object main extends  Htr:
 
   def msg = "我是用Scala 3编译的. :)"
 
-  @main
-  def main: Unit =
+  def main(args: Array[String]): Unit  =
     emailService.sendEmail("what is your name")
     println(htrName)
     println("我们都能听见Hello world!")
